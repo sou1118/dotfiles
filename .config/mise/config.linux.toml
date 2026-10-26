@@ -1,0 +1,123 @@
+[bootstrap.packages]
+"apt:git" = "latest"
+"apt:vim" = "latest"
+"apt:wget" = "latest"
+"apt:curl" = "latest"
+"apt:tree" = "latest"
+"apt:nmap" = "latest"
+"apt:qemu-system-x86" = "latest"
+"apt:qemu-utils" = "latest"
+"apt:tailscale" = "latest"
+"apt:inetutils-telnet" = "latest"
+"apt:ffmpeg" = "latest"
+"apt:llvm" = "latest"
+"apt:clang" = "latest"
+"apt:build-essential" = "latest"
+"apt:dfu-util" = "latest"
+"apt:pdftk-java" = "latest"
+"apt:tokei" = "latest"
+"apt:zsh" = "latest"
+"apt:podman" = "latest"
+"apt:podman-compose" = "latest"
+"apt:fcitx5" = "latest"
+"apt:fcitx5-mozc" = "latest"
+"apt:fcitx5-config-qt" = "latest"
+"apt:fcitx5-frontend-all" = "latest"
+"apt:make" = "latest"
+"apt:bison" = "latest"
+"apt:flex" = "latest"
+"apt:gperf" = "latest"
+"apt:clangd" = "latest"
+"apt:clang-format" = "latest"
+"apt:clang-tidy" = "latest"
+"apt:llvm-dev" = "latest"
+"apt:zlib1g-dev" = "latest"
+"apt:bpftool" = "latest"
+
+"apt:imagemagick" = "latest"
+"apt:unar" = "latest"
+"apt:hping3" = "latest"
+"apt:rdap" = "latest"
+
+"apt:ovmf" = "latest"
+"apt:openconnect" = "latest"
+"apt:network-manager-openconnect-gnome" = "latest"
+"apt:vlc" = "latest"
+"apt:obs-studio" = "latest"
+"apt:solaar" = "latest"
+"apt:v4l-utils" = "latest"
+
+"apt:code" = "latest"
+"apt:google-chrome-stable" = "latest"
+"apt:microsoft-edge-stable" = "latest"
+"apt:wireshark" = "latest"
+"apt:wezterm" = "latest"
+"apt:1password" = "latest"
+"apt:steam-launcher" = "latest"
+"apt:intune-portal" = "latest"
+"apt:mdatp" = "latest"
+
+"snap:firefox" = "latest"
+"snap:spotify" = "latest"
+
+[bootstrap.apt.sources.vscode]
+uris = "https://packages.microsoft.com/repos/code"
+suites = "stable"
+components = "main"
+key = "https://packages.microsoft.com/keys/microsoft.asc"
+fingerprint = "BC52 8686 B50D 79E3 39D3 721C EB3E 94AD BE12 29CF"
+
+[bootstrap.apt.sources.microsoft-edge]
+uris = "https://packages.microsoft.com/repos/edge-stable"
+suites = "stable"
+components = "main"
+key = "https://packages.microsoft.com/keys/microsoft.asc"
+fingerprint = "BC52 8686 B50D 79E3 39D3 721C EB3E 94AD BE12 29CF"
+
+[bootstrap.apt.sources.google-chrome]
+uris = "https://dl.google.com/linux/chrome-stable/deb/"
+suites = "stable"
+components = "main"
+key = "https://dl.google.com/linux/linux_signing_key.pub"
+fingerprint = "EB4C 1BFD 4F04 2F6D DDCC EC91 7721 F63B D38B 4796"
+
+[bootstrap.apt.sources.tailscale]
+uris = "https://pkgs.tailscale.com/stable/ubuntu"
+components = "main"
+key = "https://pkgs.tailscale.com/stable/ubuntu/resolute.noarmor.gpg"
+fingerprint = "2596 A99E AAB3 3821 893C 0A79 458C A832 957F 5868"
+
+[bootstrap.apt.sources.wezterm]
+uris = "https://apt.fury.io/wez/"
+suites = "*"
+components = "*"
+key = "https://apt.fury.io/wez/gpg.key"
+fingerprint = "0CA6 0311 6C96 0BAF B2BF 310B D7BA 31CF 90C4 B319"
+
+[bootstrap.apt.sources.1password]
+uris = "https://downloads.1password.com/linux/debian/amd64"
+suites = "stable"
+components = "main"
+key = "https://downloads.1password.com/linux/keys/1password.asc"
+fingerprint = "3FEF 9748 469A DBE1 5DA7 CA80 AC2D 6274 2012 EA22"
+
+[bootstrap.apt.sources.steam]
+uris = "https://repo.steampowered.com/steam/"
+suites = "stable"
+components = "main"
+key = "https://repo.steampowered.com/steam/archive/stable/steam.gpg"
+fingerprint = [
+  "BA18 16EF 8E75 005F CF5E 27A1 F24A EA9F B054 98B7",
+  "DB23 C56B F0F3 77FD 0297 0A2A 8470 6F31 879D 59CB",
+]
+
+# intune-portal, mdatp
+[bootstrap.apt.sources.microsoft-prod]
+uris = "https://packages.microsoft.com/ubuntu/26.04/prod"
+components = "main"
+key = "https://packages.microsoft.com/keys/microsoft-2025.asc"
+fingerprint = "AA86 F75E 427A 19DD 3334 6403 EE4D 7792 F748 182B"
+
+[bootstrap.services.tailscaled]
+state = "running"
+enabled = true
