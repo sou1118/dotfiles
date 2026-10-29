@@ -36,6 +36,11 @@ ln -s ~/ghq/github.com/sou1118/dotfiles/.config/mise ~/.config/mise
 ### Ubuntu の注意
 
 - 既存の `/etc/apt/sources.list.d/*.sources` が mise の `mise-*.sources` と同じリポジトリを指していると、apt が `Signed-By` の衝突で失敗する。先に古い方を消す。
+- `1password` パッケージの postinst はインストール・アップグレードのたびに `/etc/apt/sources.list.d/1password.sources` を書き直すので、消すだけでは再発する。`/dev/null` へのシンボリックリンクにして無効化する。
+
+  ```sh
+  sudo ln -sf /dev/null /etc/apt/sources.list.d/1password.sources
+  ```
 
 ## 日々の運用
 

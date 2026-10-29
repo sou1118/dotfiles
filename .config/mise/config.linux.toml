@@ -38,6 +38,7 @@
 "apt:unar" = "latest"
 "apt:hping3" = "latest"
 "apt:rdap" = "latest"
+"apt:sshuttle" = "latest"
 
 "apt:ovmf" = "latest"
 "apt:openconnect" = "latest"
@@ -53,6 +54,7 @@
 "apt:wireshark" = "latest"
 "apt:wezterm" = "latest"
 "apt:1password" = "latest"
+"apt:1password-cli" = "latest"
 "apt:steam-launcher" = "latest"
 "apt:intune-portal" = "latest"
 "apt:mdatp" = "latest"
@@ -104,7 +106,7 @@ fingerprint = "3FEF 9748 469A DBE1 5DA7 CA80 AC2D 6274 2012 EA22"
 [bootstrap.apt.sources.steam]
 uris = "https://repo.steampowered.com/steam/"
 suites = "stable"
-components = "main"
+components = "steam"
 key = "https://repo.steampowered.com/steam/archive/stable/steam.gpg"
 fingerprint = [
   "BA18 16EF 8E75 005F CF5E 27A1 F24A EA9F B054 98B7",
