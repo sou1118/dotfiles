@@ -21,6 +21,7 @@ lima = "2.2.1"
 fzf = "0.74.5"
 ripgrep = "15.2.0"
 fastfetch = "2.70.0"
+android-sdk = "23.0"
 
 [dotfiles]
 "~/.zshenv" = { source = "~/ghq/github.com/sou1118/dotfiles/.zshenv" }
