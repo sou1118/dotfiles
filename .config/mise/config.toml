@@ -6,7 +6,7 @@ lockfile = true
 [tools]
 codex = "0.164.0"
 ghq = "1.11.2"
-claude-code = "2.1.310"
+claude-code = "2.1.322"
 gh = "2.103.2"
 neovim = "0.12.6"
 bat = "0.26.1"
