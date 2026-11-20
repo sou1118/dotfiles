@@ -4,7 +4,7 @@ idiomatic_version_file_enable_tools = ["rust"]
 lockfile = true
 
 [tools]
-codex = "0.164.0"
+codex = "0.171.0"
 ghq = "1.11.2"
 claude-code = "2.1.322"
 gh = "2.103.2"
